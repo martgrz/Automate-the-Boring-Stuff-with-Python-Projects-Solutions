@@ -1,0 +1,12 @@
+spam = ['apples', 'bananas', 'tofu', 'cats']
+
+def CommaCode(listName):
+
+    listName[-1] = 'and ' + listName[-1]
+
+    for i in range(len(listName)-1):
+        print(listName[i]+ ", ", end="")
+        if listName[i] == listName[-2]:
+            print(listName[-1])
+
+CommaCode(spam)
